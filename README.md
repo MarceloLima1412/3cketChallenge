@@ -26,7 +26,6 @@ docker-compose up -d
 ```
 make composer-install
 cp laravel/.env.example laravel/.env
-
 ```
 Add this lines to .env file: 
 ```
