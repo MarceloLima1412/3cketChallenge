@@ -25,7 +25,12 @@ docker-compose up -d
 Install dependencies and run migrations
 ```
 make composer-install
+
 make migrate
+
+make give-permissions
+
+make key-generate
 ```
 
 ### Access application
