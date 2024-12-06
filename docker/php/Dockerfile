@@ -18,9 +18,3 @@ RUN pecl install xdebug-2.9.8 && docker-php-ext-enable xdebug
 
 WORKDIR /var/www/html
 
-RUN chmod -R 775 /var/www/html/storage
-
-RUN chown -R www-data:www-data /var/www/html/storage
-
-RUN chown -R www-data:www-data /var/www/html/public
-

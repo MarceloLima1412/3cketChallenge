@@ -53,3 +53,12 @@ api-update-restrictions-queues:
 
 check-version:
 	docker exec -it 3cket_app php artisan --version
+
+give-permissions:
+	docker exec -it 3cket_app chmod -R 775 /var/www/html/storage
+	docker exec -it 3cket_app chown -R www-data:www-data /var/www/html/storage
+	docker exec -it 3cket_app chown -R www-data:www-data /var/www/html/public
+
+key-generate:
+	docker exec -it 3cket_app php artisan key:generate
+
